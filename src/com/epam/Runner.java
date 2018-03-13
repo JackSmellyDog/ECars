@@ -18,7 +18,7 @@ public class Runner {
         Car car9 = new Car(9, "ford", "kuga", 2009, "yellow", 30000, "XS123456785");
         Car car10 = new Car(10, "ford", "kuga", 2009, "yellow", 25000, "XS123456787");
 
-        List<Car> cars = new ArrayList<Car>();
+        List<Car> cars = new ArrayList<>();
         cars.add(car1);
         cars.add(car2);
         cars.add(car3);
@@ -32,9 +32,9 @@ public class Runner {
 
         System.out.println(cars);
 
-//        System.out.println(CarLogic.getCarsByBrand(cars, "bmw"));
-//        System.out.println(CarLogic.getCarsByModel(cars, "kuga"));
-//        System.out.println(CarLogic.getCarsByYear(cars, 10));
+        System.out.println(CarLogic.getCarsByBrand(cars, "bmw"));
+        System.out.println(CarLogic.getCarsByModel(cars, "kuga", 9));
+        System.out.println(CarLogic.getCarsByYear(cars, 2009, 28000));
     }
 
 }
